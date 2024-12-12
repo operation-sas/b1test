@@ -117,10 +117,17 @@ explore: korean_string {}
 explore: map_layer {}
 
 explore: orders {
+  sql_always_where: ${orders.created_date} >= '2015-02-14' ;;
+  sql_always_having: ${users.id} >= 3500 ;;
+  always_filter: {
+    filters: [orders.status: "Pending",users.state: "Alabama"]
+  }
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
     relationship: many_to_one
+
+
   }
 }
 
