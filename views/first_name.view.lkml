@@ -1,5 +1,6 @@
+include: users.view
 view: first_name {
-#extends: [users]
+extends: [users]
 
   dimension: first_name {
     type: string
