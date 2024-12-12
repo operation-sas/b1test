@@ -1,5 +1,5 @@
 view: first_name {
-
+#extends: [users]
 
   dimension: first_name {
     type: string
