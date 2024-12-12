@@ -117,11 +117,6 @@ explore: korean_string {}
 explore: map_layer {}
 
 explore: orders {
-  sql_always_where: ${orders.created_date} >= '2015-02-14' ;;
-  sql_always_having: ${users.id} >= 3500 ;;
-  always_filter: {
-    filters: [orders.status: "Pending",users.state: "Alabama"]
-  }
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
@@ -132,6 +127,11 @@ explore: orders {
 }
 
 explore: order_items {
+  sql_always_where: ${orders.created_date} >= '2015-02-14' ;;
+  sql_always_having: ${users.id} >= 35000 ;;
+  always_filter: {
+    filters: [orders.status: "Pending",users.state: "Alabama"]
+  }
   join: orders {
     type: left_outer
     sql_on: ${order_items.order_id} = ${orders.id} ;;
