@@ -19,15 +19,15 @@ view: countries {
     sql: ${state} ;;
     html:
               {% if state._value == "Bihar" %}
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" height="170" width="255">
+              <img src="https://commons.wikimedia.org/wiki/File:Bihar_Government_Banner.png" height="70" width="55">
               {% elsif state._value == "Andhra Pradesh" %}
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_United_Andhra_Pradesh.svg/810px-Flag_of_United_Andhra_Pradesh.svg.png" height="170" width="255">
-              {% elsif state._value == "Colorado" %}
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Flag_of_Colorado.svg/255px-Flag_of_Colorado.svg.png" height="170" width="255">
-              {% elsif state._value == "Illinois"%}
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_Illinois.svg/1200px-Flag_of_Illinois.svg.png" height="170" width="255">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_United_Andhra_Pradesh.svg/810px-Flag_of_United_Andhra_Pradesh.svg.png" height="70" width="55">
+              {% elsif state._value == "Assam" %}
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Assam_Flag%28INDIA%29.png" height="70" width="55">
+              {% elsif state._value == "Arunachal Pradesh"%}
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Arunachal_Pradesh.svg" height="70" width="55">
               {% else %}
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" height="170" width="170">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png" height="70" width="55">
               {% endif %} ;;
   }
   measure: count {
